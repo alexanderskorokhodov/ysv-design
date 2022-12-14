@@ -1,0 +1,69 @@
+@import "../variables.scss";
+
+.mainView{
+    display: flex;
+    flex-direction: column;
+    background: var(--theme-color-1);
+    .faceView{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: calc(50vh - 123.6px);
+        padding-bottom: 1em;
+        align-items: center;
+        color: var(--theme-color-2);
+        .faceLogo{
+        }
+        .faceTitle{
+            text-align: center;
+            font-size: 20px;
+        }
+        .faceArrow{
+        }
+
+    }
+    .essentialsPreview{
+        background: var(--theme-color-3);
+        height: 100vh;
+        min-height: 40em;
+        .essentialsTitle{
+            padding-top: 10vh;
+            color: var(--theme-color-2);
+            font-size: 50px;
+            text-align: center;
+            margin-bottom: 10vh;
+        }
+        .essentialRow{
+            width: 100%;
+            display: flex;
+            justify-items: center;
+            justify-content: space-between;
+            overflow-x: scroll;
+            .essential {
+                display: inline-block;
+                white-space: nowrap;
+                max-height: 25em;
+                height: 50vh;
+                min-height: 20em;
+                margin-top: 1.5em;
+                margin-right: 2em;
+                margin-left: 2em;
+                margin-bottom: 1.5em;
+                min-width: 20em;
+                overflow: hidden;
+                border-radius: 20px;
+                background: var(--theme-color-2);
+                border: 3px solid var(--theme-color-2);
+            }
+            .essentialimg{
+                width: 20em;
+            }
+            .essential:hover{
+                border: 4px solid var(--theme-color-6);
+                box-shadow: 0 0 18px var(--theme-color-6);
+            }
+        }
+    }
+}

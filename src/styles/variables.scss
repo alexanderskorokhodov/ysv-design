@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Glory:ital,wght@0,500;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Roboto+Condensed:wght@400;700&display=swap');
+// fonts
+$Glory: 'Glory', sans-serif;
+$Inconsolata: 'Inconsolata', sans-serif;
+$Roboto: 'Roboto Condensed', sans-serif;
+$Koulen: 'Koulen', cursive;
+
+// spasing
+$spasing-md: 16px;
+$spasing-lg: 32px;
+
+//border radius
+$borderRadius: 11px;
+
+//header height
+$headerHeight: 100px;
+
+@mixin breakpoint($points) {
+    @if $points == md {
+        // 768 px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,153 @@
+@import "../variables.scss";
+
+.footer{
+    width: 100%;
+    background: var(--theme-color-4);
+    padding: 0em 2em 2em 2em;
+
+    display: flex;
+
+    flex-direction: column-reverse;
+    @include breakpoint(md) {
+        flex-direction: row;
+    }
+    .leftFooter{
+        flex: 1;
+        border-top: 3px solid var(--theme-color-9);
+        @include breakpoint(md) {
+            border-top: 0;
+        }
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        .footerTitle{
+            flex: 1;
+            color: var(--theme-color-5);
+            font-size: 40px;
+            user-select: none;
+            cursor: default;
+        }
+        .founders{
+            flex: 2;
+            color:var(--theme-color-9);
+            font-size: 20px;
+            user-select: none;
+            cursor: default;
+            .founder{
+                cursor: pointer;
+                user-select: none;
+            }
+            .founder:hover{
+                text-shadow: 0 0 1px var(--theme-color-9);
+                color:var(--theme-color-6);
+                text-indent: 1%;
+            }
+            margin-bottom: 1.5em;
+        }
+        .socialMedia{
+            font-size: 20px;
+            color: var(--theme-color-5);
+            display: flex;
+            flex-direction: row;
+            justify-content: left;
+            user-select: none;
+            cursor: default;
+            .smtitle{
+                height: fit-content;
+            }
+            .sm{
+                cursor: pointer;
+                background: none;
+                margin-left: 1.5em;
+                transition: linear;
+                fill: var(--theme-color-5);
+            }
+            .sm:hover{
+                transition: linear;
+                fill: var(--theme-color-6);
+            }
+        }
+
+    }
+    .rightFooter{
+        flex: 1;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        .handy{
+            display: flex;
+            flex-direction: row;
+            user-select: none;
+            cursor: default;
+            .linksTitle{
+                flex: 1;
+                color: var(--theme-color-5);
+                font-size: 40px;
+            }
+            .lang {
+                margin-top: auto;
+                margin-bottom: auto;
+                color: var(--theme-color-9);
+            }
+            .lang:hover{
+                text-indent: -1%;
+            }
+        }
+        .links{
+            flex: 2;
+            color:var(--theme-color-9);
+            font-size: 20px;
+            .link{
+                cursor: pointer;
+            }
+            .link:hover{
+                text-shadow: 0 0 1px var(--theme-color-9);
+                color:var(--theme-color-6);
+                text-indent: 1%;
+            }
+            margin-bottom: 1.5em;
+        }
+        .subcribe{
+            font-size: 20px;
+            color: var(--theme-color-5);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            user-select: none;
+            .sub{
+                height: fit-content;
+            }
+            .email {
+                border-radius: 10px;
+                height: 1.5em;
+                margin-top: auto;
+                margin-bottom: auto;
+                border: 2px solid var(--theme-color-9);
+                background: none;
+                max-width: 9em;
+                display: flex;
+                .emailInput {
+                    border-radius: 10px;
+                    border: none;
+                    background: none;
+                    text-align: center;
+                    font-family: Koulen;
+                    width: 9em;
+                    color: var(--theme-color-9);
+                }
+                .emailBut{
+                    width: 1em;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-right: 0.1em;
+                    margin-left: 0.2em;
+                }
+            }
+        }
+        margin-bottom: 2em;
+        @include breakpoint(md) {
+            margin-bottom: 0;
+        }
+    }
+}
