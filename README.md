@@ -1,4 +1,4 @@
-# YSB Site 
+# YS Site 
 
 This project was uploaded to https://ysv.vercel.app.
 
