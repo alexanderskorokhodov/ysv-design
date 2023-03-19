@@ -1,4 +1,4 @@
-# YS Site 
+# Brand Site 
 
 This project was uploaded to https://ysv.vercel.app.
 
